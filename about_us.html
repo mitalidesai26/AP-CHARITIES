@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Library - AP Charities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Layout variables */
+        :root {
+            --header-height: 70px;
+            --sidebar-width: 220px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding-top: var(--header-height);
+        }
+
+        header {
+            background-color: #ec0707;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: var(--header-height);
+        }
+
+        .navbar {
+            background-color: #fff !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            background-color: #ec0707;
+            width: var(--sidebar-width);
+            height: calc(100vh - var(--header-height));
+            position: fixed;
+            top: var(--header-height);
+            left: 0;
+            padding: 20px 0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 900;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Main content area */
+        .main {
+            margin-left: var(--sidebar-width);
+            padding: 20px;
+            min-height: calc(100vh - var(--header-height));
+            position: relative;
+            z-index: 1;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .sidebar {
+                position: static;
+                width: 100%;
+                height: auto;
+            }
+
+            .main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img src="logo.png" alt="AP Charities Logo" style="height: 50px; margin-left: 20px;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="about_us.html">About us</a>
+            <a href="media_library.html">Media Library</a>
+            <a href="events.html">Events</a>
+            <a href="donaion.html">Donations </a>
+        </div>
+        <div class="main">
+            <h2>About AP Charities</h2>
+            <div class="card">
+                <h3>Our mission</h3>
+                <p>AP Charities is dedicated to making a positive impact in the lives of those in need. Our mission is
+                    to provide support, resources, and opportunities to underserved communities around the world.</p>
+                <p>Founded in [2025], we have been working tirelessly to address various social issues, including
+                    poverty, education, healthcare, and disaster relief. Our team is composed of passionate individuals
+                    who believe in the power of compassion and community.</p>
+                <p>We collaborate with local organizations, volunteers, and donors to create sustainable solutions that
+                    empower individuals and transform communities. Through our various programs and initiatives, we
+                    strive to make a lasting difference and inspire others to join us in our cause.</p>
+                <p>Thank you for your interest in AP Charities. Together, we can create a better world for everyone.</p>
+            </div>
+
+            <div class="card">
+                <h3>Our Work</h3>
+                <p>Working in five key areas, AP Charities aims to express a spirit of selfless service
+                    through Health Awareness, Educational Services, Humanitarian Relief, Environmental Protection
+                    & Preservation and Community Empowerment. From Walkathons or Sponsored Walks that raise funds for
+                    local communities to supporting humanitarian relief in times of urgent need or from community health
+                    fairs
+                    to sustaining hospitals and schools in developing countries, AP Charities provides an opportunity
+                    for
+                    individuals wishing to serve locally and globally</p>
+            </div>
+
+            <div class="card">
+                <h3>Official Web Platforms</h3>
+                <p>Please note that the following web platforms can be considered official sources of information on AP
+                    Charities:</p>
+
+                <p><b>facebook.com/apcharities</b></p>
+                <p><b>twitter.com/apcharities</b></p>
+                <p><b>youtube.com/apcharities</b></p>
+
+                <p>Other websites or sources should not be considered official.</p>
+            </div>
+
+            <div class="card text-center py-5">
+                <i class="fas fa-plus fa-3x text-muted"></i>
+                <p class="mt-3">Add more information about AP Charities</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
